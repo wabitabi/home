@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CategoryFilter } from "@/components/site/CategoryFilter";
-import { danangPhotos, ryugakuPhoto, Photo } from "@/lib/photos";
+import { snsPhoto, ryugakuPhoto, Photo } from "@/lib/photos";
 import { resultItems } from "@/lib/data/results";
 import { BUSINESS_CATEGORY_LABEL, BusinessCategory } from "@/lib/types";
 import { SmartImage } from "@/components/site/SmartImage";
@@ -11,7 +11,7 @@ import { SmartImage } from "@/components/site/SmartImage";
 // カテゴリごとの代表写真（wellbeingは写真なし、ryugakuは実写真が届くまでプレースホルダー）
 const categoryPhoto: Partial<Record<BusinessCategory, Photo>> = {
   ryugaku: ryugakuPhoto,
-  sns: danangPhotos.cafe,
+  sns: snsPhoto,
 };
 
 export function ResultsList() {

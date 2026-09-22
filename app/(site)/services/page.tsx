@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { danangPhotos, ryugakuPhoto, guestLecturePhoto } from "@/lib/photos";
+import { wellbeingPhoto, ryugakuPhoto, guestLecturePhoto, snsPhoto } from "@/lib/photos";
 import { PageHero } from "@/components/site/PageHero";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { SmartImage } from "@/components/site/SmartImage";
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <section id="wellbeing" className="scroll-mt-20 py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row">
-            <img src={danangPhotos.beach.src} alt={danangPhotos.beach.alt} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={wellbeingPhoto} className="w-full max-w-sm object-cover" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">01 — WELLBEING RYUGAKU</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">Wellbeing留学</h2>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
       <section id="sns" className="scroll-mt-20 border-t border-sand bg-linen py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row-reverse">
-            <img src={danangPhotos.cafe.src} alt={danangPhotos.cafe.alt} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={snsPhoto} className="w-full max-w-sm object-cover" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">04 — SNS PR</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">SNS PR事業</h2>

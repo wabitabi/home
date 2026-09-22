@@ -47,6 +47,24 @@ export const soudanPhoto: Photo = {
   caption: "まずは気軽に、無料相談から",
 };
 
+// Wellbeing留学（トップ・サービス）※未アップロードの間は現在のダナン写真を表示
+export const wellbeingPhoto: Photo = {
+  id: 204,
+  src: "/images/wellbeingryugaku.jpg",
+  fallback: "/images/danang-beach.png",
+  alt: "Wellbeing留学の様子",
+  caption: "Wellbeing留学",
+};
+
+// SNS PR事業（トップ・サービス・実績）※未アップロードの間は現在のダナン写真を表示
+export const snsPhoto: Photo = {
+  id: 205,
+  src: "/images/sns.jpg",
+  fallback: "/images/danang-cafe.png",
+  alt: "SNS PR事業の様子",
+  caption: "SNS PR",
+};
+
 // アップロード済みの実写真
 export const heroPhoto: Photo = {
   id: 100,

@@ -19,19 +19,24 @@
 | くまもと留学相談室（トップ・サービス・実績） | `ryugaku.jpg` | 相談風景／熊本の学校・街／セブ島留学など | 横 1200×900px |
 | 出張授業（トップ・サービス） | `guest-lecture.jpg` | 学校での登壇・子どもたちとの授業風景 | 横 1200×900px |
 | 無料相談ページ上部 | `soudan.jpg` | 面談・オンライン相談の安心感ある写真 | 横 1600×900px（16:9） |
+| Wellbeing留学（トップ・サービス） | `wellbeingryugaku.jpg` | ダナンでのプログラム・滞在の様子 | 横 1200×900px |
+| SNS PR事業（トップ・サービス・実績） | `sns.jpg` | 撮影・発信の様子／制作物など | 横 1200×900px |
+
+※ `wellbeingryugaku.jpg` / `sns.jpg` は、置くまでは現在のダナン写真
+（`danang-beach.png` / `danang-cafe.png`）が仮表示され、アップロードすると自動で差し替わります。
 
 ## すでに入っている実写真（変更不要）
 
 | ファイル名 | 内容 | 使用場所 |
 | --- | --- | --- |
 | `hero-sky.jpg` | 空と飛行機雲（16:9） | トップのメインビジュアル |
-| `danang-beach.png` | ダナンビーチの夕暮れ | Wellbeing留学 |
-| `danang-cafe.png` | ベトナムのカフェ | SNS PR事業 |
 
-## 予備（現在は未使用・実績記事などで使えます）
+## 予備（仮表示・実績記事などで使えます）
 
 | ファイル名 | 内容 |
 | --- | --- |
+| `danang-beach.png` | ダナンビーチの夕暮れ（Wellbeing留学の仮表示） |
+| `danang-cafe.png` | ベトナムのカフェ（SNS PRの仮表示） |
 | `danang-market.png` | ベトナムの市場 |
 | `danang-street.png` | バイクと街 |
 

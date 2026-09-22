@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { danangPhotos, ryugakuPhoto, guestLecturePhoto, Photo } from "@/lib/photos";
+import { wellbeingPhoto, ryugakuPhoto, guestLecturePhoto, snsPhoto, Photo } from "@/lib/photos";
 import { VISION, MISSION, PILLARS, CEO_MESSAGE, CEO_NAME, CEO_TITLE } from "@/lib/site-content";
 import { newsItems } from "@/lib/data/news";
 import { BUSINESS_CATEGORY_LABEL } from "@/lib/types";
@@ -13,10 +13,10 @@ export const metadata = {
 
 // 事業ごとの写真（くまもと留学相談室・出張授業は実写真が届くまでプレースホルダー）
 const pillarPhoto: Record<string, Photo> = {
-  wellbeing: danangPhotos.beach,
+  wellbeing: wellbeingPhoto,
   ryugaku: ryugakuPhoto,
   shucchou: guestLecturePhoto,
-  sns: danangPhotos.cafe,
+  sns: snsPhoto,
 };
 
 export default function TopPage() {

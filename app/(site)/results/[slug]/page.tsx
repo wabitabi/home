@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { danangPhotos, ryugakuPhoto, Photo } from "@/lib/photos";
+import { snsPhoto, ryugakuPhoto, Photo } from "@/lib/photos";
 import { resultItems } from "@/lib/data/results";
 import { BUSINESS_CATEGORY_LABEL, BusinessCategory } from "@/lib/types";
 import { Eyebrow } from "@/components/site/Eyebrow";
@@ -8,7 +8,7 @@ import { SmartImage } from "@/components/site/SmartImage";
 
 const categoryPhoto: Partial<Record<BusinessCategory, Photo>> = {
   ryugaku: ryugakuPhoto,
-  sns: danangPhotos.cafe,
+  sns: snsPhoto,
 };
 
 interface ResultDetailPageProps {
