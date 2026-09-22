@@ -3,6 +3,11 @@ import { wellbeingPhoto, ryugakuPhoto, guestLecturePhoto, snsPhoto } from "@/lib
 import { PageHero } from "@/components/site/PageHero";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { SmartImage } from "@/components/site/SmartImage";
+import { YouTubeEmbed } from "@/components/site/YouTubeEmbed";
+import { InstagramReel } from "@/components/site/InstagramReel";
+
+// SNS PR事業 過去実績（Instagramリールのショートコード）
+const SNS_REELS = ["DbK6xSYRRjJ", "DdES6UZJY9C", "Dck_cX0ST53", "DQyt-YhEgp4"];
 
 export const metadata = { title: "サービス｜株式会社WABITABI" };
 
@@ -24,14 +29,14 @@ export default function ServicesPage() {
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">01 — WELLBEING RYUGAKU</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">Wellbeing留学</h2>
               <div className="space-y-4 text-sm leading-[2.1] text-taupe">
-                <p>18〜25歳の女性を対象とした、2週間のキャリア育成プログラムです。</p>
                 <p>
-                  舞台はベトナム・ダナン。実践型インターンシップで、起業家精神（アントレプレナーシップ）を
-                  育みながら、自分のキャリアと本気で向き合います。
+                  18〜25歳の女性を対象にした、約2週間のキャリア育成プログラム。舞台はベトナム。
+                  実践型インターンシップで、起業家精神（アントレプレナーシップ）を育みながら、
+                  自分のキャリアと本気で向き合います。
                 </p>
                 <p>
-                  プログラム終了後も、卒業生同士がずっとつながり続けられるコミュニティがあります。
-                  第1期は10名が参加し、第2期（8/26〜9/8、最大12名）を計画中です。
+                  プログラム終了後も、卒業生同士がずっとつながり続けられるコミュニティ。
+                  第1期は10名が参加し、第2期は9名が参加しました。
                 </p>
               </div>
               <Link
@@ -41,6 +46,12 @@ export default function ServicesPage() {
                 プログラムについて問い合わせる
               </Link>
             </div>
+          </div>
+
+          {/* Wellbeing留学ダイジェスト動画 */}
+          <div className="mx-auto mt-16 max-w-2xl">
+            <p className="mb-4 text-center text-[10px] tracking-[0.3em] text-gold">DIGEST MOVIE</p>
+            <YouTubeEmbed id="9azHd81WNfw" title="Wellbeing留学ダイジェスト" />
           </div>
         </div>
       </section>
@@ -123,6 +134,16 @@ export default function ServicesPage() {
               >
                 SNS PRについて問い合わせる
               </Link>
+            </div>
+          </div>
+
+          {/* 過去実績（Instagramリール） */}
+          <div className="mt-16">
+            <p className="mb-8 text-center text-[10px] tracking-[0.3em] text-gold">PAST WORKS</p>
+            <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+              {SNS_REELS.map((id) => (
+                <InstagramReel key={id} id={id} />
+              ))}
             </div>
           </div>
         </div>

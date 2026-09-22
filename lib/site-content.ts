@@ -1,9 +1,10 @@
 // サイト全体で共通利用するコンテンツ
-export const VISION = "どこに生まれても、誰もが自分らしい人生を選べる社会へ";
-export const MISSION = "海外挑戦というきっかけで、自分らしく生きる人を増やす。";
+export const VISION = "どこに生まれても、\n誰もが自分らしい人生を選べる社会へ";
+export const MISSION = "海外挑戦をきっかけに\n自分らしく生きる人を増やす";
 
 // /designs 参照用（2行表示のデザインモックで使用）
 export const VISION_LINES = ["どこに生まれても、", "誰もが自分らしい人生を選べる社会へ"] as const;
+export const MISSION_LINES = ["海外挑戦をきっかけに", "自分らしく生きる人を増やす"] as const;
 
 export const SUB_COPY =
   "熊本から、心理学にもとづく体験設計で「はじめての一歩」に伴走します。";
@@ -13,7 +14,7 @@ export const PILLARS = [
     id: "wellbeing",
     title: "Wellbeing留学",
     en: "Wellbeing Ryugaku",
-    desc: "18〜25歳の女性を対象にした、2週間のキャリア育成プログラム。舞台はベトナム・ダナン。実践型インターンシップで、起業家精神（アントレプレナーシップ）を育みながら、自分のキャリアと本気で向き合います。",
+    desc: "18〜25歳の女性を対象にした、約2週間のキャリア育成プログラム。舞台はベトナム。実践型インターンシップで、起業家精神（アントレプレナーシップ）を育みながら、自分のキャリアと本気で向き合います。",
     photoIndex: 4,
   },
   {

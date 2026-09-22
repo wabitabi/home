@@ -7,9 +7,18 @@ import { SmartImage } from "@/components/site/SmartImage";
 export const metadata = { title: "私たちについて｜株式会社WABITABI" };
 
 const profile = [
-  "熊本県出身。早稲田大学人間情報学科（行動分析）を2026年3月に卒業。",
-  "33カ国の渡航経験、ハンガリー留学、インドでの海外インターンを経て、東京から地元・熊本にUターンして起業。",
+  "熊本県出身。熊本県立済々黌高校卒業。早稲田大学人間情報学科（行動分析）を2026年3月に卒業。",
+  "34カ国の渡航経験、ハンガリー留学、インドでの海外インターンを経て、東京から地元・熊本にUターンして起業。",
   "ポジティブ心理学インストラクター資格を持ち、心理学の知見を活かした「行動変容につながる体験設計」を専門とする。",
+];
+
+const achievements: { date: string; text: string }[] = [
+  { date: "2025年11月", text: "TIB JAM FES 2025 自己分析カウンセラー" },
+  { date: "2026年7月", text: "熊本県高校生サミット 講演" },
+  { date: "2026年9月", text: "1DAYチャレンジキャンプ（XOSS POINT.）主催" },
+  { date: "2026年10月〜", text: "熊本県立済々黌高校 国際ゼミ 臨時責任者" },
+  { date: "2026年10月", text: "関西ベンチャー学会 講演" },
+  { date: "2026年10月", text: "四天王寺大学 実学マネジメント論 講師" },
 ];
 
 export default function AboutPage() {
@@ -25,7 +34,7 @@ export default function AboutPage() {
       <section className="py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Eyebrow className="mb-8">Vision</Eyebrow>
-          <h2 className="text-2xl font-light leading-[2] tracking-wider md:text-3xl">{VISION}</h2>
+          <h2 className="whitespace-pre-line text-2xl font-light leading-[2] tracking-wider md:text-3xl">{VISION}</h2>
           <p className="mx-auto mt-10 max-w-2xl text-sm leading-[2.2] text-taupe">
             留学や海外挑戦を、特別な人だけのものではなく、誰もが自分らしさを見つけるための手段として届けたい。
             私たちはそう考えています。
@@ -37,7 +46,7 @@ export default function AboutPage() {
       <section className="border-t border-sand py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Eyebrow className="mb-8">Mission</Eyebrow>
-          <h2 className="text-2xl font-light leading-[2] tracking-wider md:text-3xl">{MISSION}</h2>
+          <h2 className="whitespace-pre-line text-2xl font-light leading-[2] tracking-wider md:text-3xl">{MISSION}</h2>
           <p className="mx-auto mt-10 max-w-2xl text-sm leading-[2.2] text-taupe">
             ポジティブ心理学・行動分析の知見をベースに、単なる語学留学ではなく「自己理解」と「行動変容」に
             つながる体験を設計すること。それが、WABITABIのすべての事業に共通する軸です。
@@ -61,6 +70,18 @@ export default function AboutPage() {
                 {profile.map((line, i) => (
                   <p key={i}>{line}</p>
                 ))}
+              </div>
+
+              <div className="mt-10">
+                <p className="mb-5 text-[10px] tracking-[0.3em] text-gold">ACTIVITIES</p>
+                <dl className="space-y-3 text-sm leading-relaxed">
+                  {achievements.map((a, i) => (
+                    <div key={i} className="flex flex-col gap-1 border-b border-sand pb-3 md:flex-row md:gap-6">
+                      <dt className="shrink-0 text-[11px] tracking-[0.15em] text-taupe md:w-28">{a.date}</dt>
+                      <dd className="text-ink">{a.text}</dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             </div>
           </div>
@@ -110,7 +131,7 @@ export default function AboutPage() {
             </p>
             <p>
               その経験がきっかけで、世界にはまだ知らないだけで、こんなにも多様な生き方があるのだと感じ、
-              学生時代のうちに33カ国を旅することになった。
+              学生時代のうちに34カ国を旅することになった。
             </p>
             <p className="text-ink">
               世界を見るということは、ただ新しい景色に出会うことではない。自分の人生の選択肢を、自分の手で

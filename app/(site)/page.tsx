@@ -30,11 +30,11 @@ export default function TopPage() {
         <div className="grid gap-16 md:grid-cols-2">
           <div className="text-center md:text-left">
             <Eyebrow className="mb-8">Vision</Eyebrow>
-            <h2 className="text-xl font-light leading-[2] tracking-wider md:text-2xl">{VISION}</h2>
+            <h2 className="whitespace-pre-line text-xl font-light leading-[2] tracking-wider md:text-2xl">{VISION}</h2>
           </div>
           <div className="text-center md:text-left md:border-l md:border-sand md:pl-16">
             <Eyebrow className="mb-8">Mission</Eyebrow>
-            <h2 className="text-xl font-light leading-[2] tracking-wider md:text-2xl">{MISSION}</h2>
+            <h2 className="whitespace-pre-line text-xl font-light leading-[2] tracking-wider md:text-2xl">{MISSION}</h2>
           </div>
         </div>
       </section>
