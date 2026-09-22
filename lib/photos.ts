@@ -15,7 +15,6 @@ export interface Photo {
 export const ceoPhoto: Photo = {
   id: 200,
   src: "/images/ceo.jpg",
-  fallback: "/images/photo-2.svg",
   alt: "代表取締役 島添日花李",
   caption: "代表取締役 島添日花李",
 };
@@ -24,7 +23,6 @@ export const ceoPhoto: Photo = {
 export const ryugakuPhoto: Photo = {
   id: 201,
   src: "/images/ryugaku.jpg",
-  fallback: "/images/photo-4.svg",
   alt: "くまもと留学相談室の相談風景",
   caption: "くまもと留学相談室",
 };
@@ -33,7 +31,6 @@ export const ryugakuPhoto: Photo = {
 export const guestLecturePhoto: Photo = {
   id: 202,
   src: "/images/guest-lecture.jpg",
-  fallback: "/images/photo-1.svg",
   alt: "学校での出張授業の様子",
   caption: "出張授業",
 };
@@ -42,25 +39,22 @@ export const guestLecturePhoto: Photo = {
 export const soudanPhoto: Photo = {
   id: 203,
   src: "/images/soudan.jpg",
-  fallback: "/images/photo-1.svg",
   alt: "無料相談の様子",
   caption: "まずは気軽に、無料相談から",
 };
 
-// Wellbeing留学（トップ・サービス）※未アップロードの間は現在のダナン写真を表示
+// Wellbeing留学（トップ・サービス）
 export const wellbeingPhoto: Photo = {
   id: 204,
   src: "/images/wellbeingryugaku.jpg",
-  fallback: "/images/danang-beach.png",
   alt: "Wellbeing留学の様子",
   caption: "Wellbeing留学",
 };
 
-// SNS PR事業（トップ・サービス・実績）※未アップロードの間は現在のダナン写真を表示
+// SNS PR事業（トップ・サービス・実績）
 export const snsPhoto: Photo = {
   id: 205,
   src: "/images/sns.jpg",
-  fallback: "/images/danang-cafe.png",
   alt: "SNS PR事業の様子",
   caption: "SNS PR",
 };
