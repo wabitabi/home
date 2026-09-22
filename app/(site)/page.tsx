@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { wellbeingPhoto, ryugakuPhoto, guestLecturePhoto, snsPhoto, Photo } from "@/lib/photos";
-import { VISION, MISSION, PILLARS, CEO_MESSAGE, CEO_NAME, CEO_TITLE } from "@/lib/site-content";
+import { VISION_LINES, MISSION_LINES, PILLARS, CEO_MESSAGE, CEO_NAME, CEO_TITLE } from "@/lib/site-content";
 import { newsItems } from "@/lib/data/news";
 import { BUSINESS_CATEGORY_LABEL } from "@/lib/types";
 import { Eyebrow } from "@/components/site/Eyebrow";
@@ -30,11 +30,19 @@ export default function TopPage() {
         <div className="grid gap-16 md:grid-cols-2">
           <div className="text-center md:text-left">
             <Eyebrow className="mb-8">Vision</Eyebrow>
-            <h2 className="whitespace-pre-line text-xl font-light leading-[2] tracking-wider md:text-2xl">{VISION}</h2>
+            <h2 className="text-base font-light leading-[1.9] tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+              {VISION_LINES.map((line) => (
+                <span key={line} className="block whitespace-nowrap">{line}</span>
+              ))}
+            </h2>
           </div>
           <div className="text-center md:text-left md:border-l md:border-sand md:pl-16">
             <Eyebrow className="mb-8">Mission</Eyebrow>
-            <h2 className="whitespace-pre-line text-xl font-light leading-[2] tracking-wider md:text-2xl">{MISSION}</h2>
+            <h2 className="text-base font-light leading-[1.9] tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+              {MISSION_LINES.map((line) => (
+                <span key={line} className="block whitespace-nowrap">{line}</span>
+              ))}
+            </h2>
           </div>
         </div>
       </section>

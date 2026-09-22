@@ -1,5 +1,5 @@
 import { ceoPhoto } from "@/lib/photos";
-import { VISION, MISSION, CEO_NAME, CEO_TITLE } from "@/lib/site-content";
+import { VISION_LINES, MISSION_LINES, CEO_NAME, CEO_TITLE } from "@/lib/site-content";
 import { PageHero } from "@/components/site/PageHero";
 import { Eyebrow } from "@/components/site/Eyebrow";
 import { SmartImage } from "@/components/site/SmartImage";
@@ -34,7 +34,11 @@ export default function AboutPage() {
       <section className="py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Eyebrow className="mb-8">Vision</Eyebrow>
-          <h2 className="whitespace-pre-line text-2xl font-light leading-[2] tracking-wider md:text-3xl">{VISION}</h2>
+          <h2 className="text-base font-light leading-[1.9] tracking-wide sm:text-xl md:text-3xl">
+            {VISION_LINES.map((line) => (
+              <span key={line} className="block whitespace-nowrap">{line}</span>
+            ))}
+          </h2>
           <p className="mx-auto mt-10 max-w-2xl text-sm leading-[2.2] text-taupe">
             留学や海外挑戦を、特別な人だけのものではなく、誰もが自分らしさを見つけるための手段として届けたい。
             私たちはそう考えています。
@@ -46,7 +50,11 @@ export default function AboutPage() {
       <section className="border-t border-sand py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Eyebrow className="mb-8">Mission</Eyebrow>
-          <h2 className="whitespace-pre-line text-2xl font-light leading-[2] tracking-wider md:text-3xl">{MISSION}</h2>
+          <h2 className="text-base font-light leading-[1.9] tracking-wide sm:text-xl md:text-3xl">
+            {MISSION_LINES.map((line) => (
+              <span key={line} className="block whitespace-nowrap">{line}</span>
+            ))}
+          </h2>
           <p className="mx-auto mt-10 max-w-2xl text-sm leading-[2.2] text-taupe">
             ポジティブ心理学・行動分析の知見をベースに、単なる語学留学ではなく「自己理解」と「行動変容」に
             つながる体験を設計すること。それが、WABITABIのすべての事業に共通する軸です。
