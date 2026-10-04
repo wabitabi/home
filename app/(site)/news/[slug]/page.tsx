@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { newsItems } from "@/lib/data/news";
 import { BUSINESS_CATEGORY_LABEL } from "@/lib/types";
 import { Eyebrow } from "@/components/site/Eyebrow";
+import { InstagramReel } from "@/components/site/InstagramReel";
 
 interface NewsDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -28,8 +29,28 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           {item.title}
         </h1>
 
-        <div className="animate-fade-up animation-delay-600 mt-14 border-t border-sand pt-12 text-sm leading-[2.4] text-taupe">
-          <p>{item.body}</p>
+        <div className="animate-fade-up animation-delay-600 mt-14 space-y-6 border-t border-sand pt-12 text-sm leading-[2.4] text-taupe">
+          {item.body.map((block, i) => {
+            if (block.type === "text") return <p key={i}>{block.text}</p>;
+            if (block.type === "link")
+              return (
+                <p key={i}>
+                  <a
+                    href={block.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block break-all border-b border-gold pb-0.5 text-ink transition hover:text-gold"
+                  >
+                    {block.label}
+                  </a>
+                </p>
+              );
+            if (block.type === "image")
+              return <img key={i} src={block.src} alt={block.alt} className="w-full" />;
+            if (block.type === "reel")
+              return <InstagramReel key={i} id={block.id} className="my-2" />;
+            return null;
+          })}
         </div>
 
         <div className="mt-16 text-center">
