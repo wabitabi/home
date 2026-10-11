@@ -59,7 +59,7 @@ export default function TopPage() {
               >
                 <SmartImage
                   photo={pillarPhoto[p.id]}
-                  className="w-full max-w-xs object-cover"
+                  className="aspect-square w-full max-w-xs object-contain bg-linen"
                 />
                 <div className="flex-1 text-center md:text-left">
                   <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">{`0${i + 1}`}</p>

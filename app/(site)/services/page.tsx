@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <section id="wellbeing" className="scroll-mt-20 py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row">
-            <SmartImage photo={wellbeingPhoto} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={wellbeingPhoto} className="aspect-square w-full max-w-sm object-contain bg-linen" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">01 — WELLBEING RYUGAKU</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">Wellbeing留学</h2>
@@ -68,7 +68,7 @@ export default function ServicesPage() {
       <section id="ryugaku" className="scroll-mt-20 border-t border-sand bg-linen py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row-reverse">
-            <SmartImage photo={ryugakuPhoto} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={ryugakuPhoto} className="aspect-square w-full max-w-sm object-contain bg-linen" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">02 — KUMAMOTO RYUGAKU SOUDAN</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">くまもと留学相談室</h2>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
       <section id="shucchou" className="scroll-mt-20 py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row">
-            <SmartImage photo={guestLecturePhoto} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={guestLecturePhoto} className="aspect-square w-full max-w-sm object-contain bg-linen" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">03 — GUEST LECTURES</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">出張授業</h2>
@@ -125,7 +125,7 @@ export default function ServicesPage() {
       <section id="sns" className="scroll-mt-20 border-t border-sand bg-linen py-24">
         <div className="mx-auto max-w-4xl px-6">
           <div className="flex flex-col items-center gap-12 md:flex-row-reverse">
-            <SmartImage photo={snsPhoto} className="w-full max-w-sm object-cover" />
+            <SmartImage photo={snsPhoto} className="aspect-square w-full max-w-sm object-contain bg-linen" />
             <div className="flex-1">
               <p className="mb-2 text-[10px] tracking-[0.3em] text-gold">04 — SNS PR</p>
               <h2 className="mb-6 text-2xl font-light tracking-wide">SNS PR事業</h2>

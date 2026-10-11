@@ -72,7 +72,9 @@ const localPrograms: { label: string; en: string; steps: { t: string; d: string 
     en: "SNS",
     steps: [
       { t: "紹介コンテンツ", d: "レストラン・カフェ・スパ・お店・アクティビティから1つ選び、その場所を紹介するコンテンツを作成。" },
-      { t: "PRコンテンツ動画（TシャツPR）", d: "商品開発インターンで作ったお土産Tシャツを、PRする動画コンテンツに仕上げます。" },
+      { t: "PRコンテンツ動画", d: "商品開発インターンで作ったお土産Tシャツを、PRする動画コンテンツに仕上げます。" },
+      { t: "個別フィードバック", d: "SNS運用のプロから、実際に自分が作成したコンテンツに対し、細かいフィードバックを行います。" },
+      { t: "投稿", d: "作成したコンテンツをWellbeing留学のアカウントで投稿。投稿後のインサイトデータを見ることで、次のコンテンツ改善に繋げます。" },
     ],
   },
   {
@@ -211,7 +213,7 @@ export default function WellbeingLpPage() {
                 key={p.no}
                 className={`flex flex-col items-center gap-10 md:flex-row ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}
               >
-                <SmartImage photo={p.photo} className="w-full max-w-sm object-cover" />
+                <SmartImage photo={p.photo} className="aspect-square w-full max-w-sm object-contain bg-linen" />
                 <div className="flex-1">
                   <p className="text-[11px] tracking-[0.3em] text-gold">
                     POINT {p.no} — {p.en}
