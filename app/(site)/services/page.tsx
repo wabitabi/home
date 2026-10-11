@@ -39,12 +39,20 @@ export default function ServicesPage() {
                   第1期は10名が参加し、第2期は9名が参加しました。
                 </p>
               </div>
-              <Link
-                href="/contact"
-                className="mt-8 inline-block border-b border-gold pb-1 text-xs tracking-[0.2em] transition hover:text-gold"
-              >
-                プログラムについて問い合わせる
-              </Link>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+                <Link
+                  href="/services/wellbeing"
+                  className="inline-block border border-ink bg-ink px-8 py-3 text-xs tracking-[0.2em] text-paper transition hover:bg-paper hover:text-ink"
+                >
+                  詳しく見る →
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-block border-b border-gold pb-1 text-xs tracking-[0.2em] transition hover:text-gold"
+                >
+                  プログラムについて問い合わせる
+                </Link>
+              </div>
             </div>
           </div>
 

@@ -59,6 +59,32 @@ export const snsPhoto: Photo = {
   caption: "SNS PR",
 };
 
+// ===== Wellbeing留学 LP用スロット（未アップロードの間は既存写真を仮表示）=====
+// POINT1 BUSINESS（SNS研修・商品開発インターン）
+export const wbBusinessPhoto: Photo = {
+  id: 210,
+  src: "/images/wellbeing-business.jpg",
+  fallback: "/images/sns.jpg",
+  alt: "SNS研修・商品開発インターンの様子",
+  caption: "BUSINESS",
+};
+// POINT2 WELLBEING（Wellness class・ジャーナリング）
+export const wbWellnessPhoto: Photo = {
+  id: 211,
+  src: "/images/wellbeing-wellness.jpg",
+  fallback: "/images/danang-beach.png",
+  alt: "朝のWellness classの様子",
+  caption: "WELLBEING",
+};
+// POINT3 TEAM（全国から集まる仲間）
+export const wbTeamPhoto: Photo = {
+  id: 212,
+  src: "/images/wellbeing-team.jpg",
+  fallback: "/images/danang-market.png",
+  alt: "全国から集まったメンバー",
+  caption: "TEAM",
+};
+
 // アップロード済みの実写真
 export const heroPhoto: Photo = {
   id: 100,
